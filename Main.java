@@ -35,5 +35,7 @@ public class Main {
         int numb = sc.nextInt();
         Power pr6 = new Power();
         System.out.println(pr6.problem6(degree,numb));
+        FindReverseOrder pb7 = new FindReverseOrder();
+        pb7.reverseOrder(n,N);
     }
 }
