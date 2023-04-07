@@ -36,6 +36,20 @@ public class Main {
         Power pr6 = new Power();
         System.out.println(pr6.problem6(degree,numb));
         FindReverseOrder pb7 = new FindReverseOrder();
-        pb7.reverseOrder(n,N);
+        int p7n = sc.nextInt();
+        int[] pb7n = new int[p7n];
+        for(int i = 0; i<p7n; i++){
+            pb7n[i]=sc.nextInt();
+        }
+        pb7.reverseOrder(p7n,pb7n);
+
+        char[] as = sc.next().toCharArray();
+        FindIsDigit sas = new FindIsDigit();
+        if(sas.isItDigit(as)){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
+        }
     }
 }
