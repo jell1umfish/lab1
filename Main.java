@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.stream.StreamSupport;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,17 +8,17 @@ public class Main {
         for(int i = 0; i<n; i++){
             N[i]=sc.nextInt();
         }
-        Problem1 a = new Problem1(n, N);
-        a.Problem_1(n,N);
+        FindMinimum a = new FindMinimum(n, N);
+        a.FindMin(n,N);
         int m = sc.nextInt();
         int[] M = new int[m];
         for(int i = 0; i<m; i++){
             M[i]=sc.nextInt();
         }
-        Problem2 b = new Problem2(m, M);
-        b.Problem_2();
+        FindAverage b = new FindAverage(m, M);
+        b.FindAVG();
         int number = sc.nextInt();
-        Problem3 c = new Problem3(number);
+        FindIsPrime c = new FindIsPrime(number);
         if(c.isPrime()){
             System.out.println("Prime");
         }
@@ -27,10 +26,14 @@ public class Main {
             System.out.println("Composite");
         }
         int h = sc.nextInt();
-        Problem4 d = new Problem4();
+        Factorial d = new Factorial();
         System.out.println(d.fact(h));
         int pb5 = sc.nextInt();
-        Problem5 p5 = new Problem5();
+        Fibonacci p5 = new Fibonacci();
         p5.Fibonacci(pb5);
+        int degree = sc.nextInt();
+        int numb = sc.nextInt();
+        Power pr6 = new Power();
+        System.out.println(pr6.problem6(degree,numb));
     }
 }

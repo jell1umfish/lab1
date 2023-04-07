@@ -1,7 +1,7 @@
-public class Problem3 {
+public class FindIsPrime {
     private int number;
 
-    public Problem3(int number) {
+    public FindIsPrime(int number) {
         this.number = number;
     }
 

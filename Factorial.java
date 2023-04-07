@@ -1,4 +1,4 @@
-public class Problem4 {
+public class Factorial {
     public int fact(int n)
     {
         int output;

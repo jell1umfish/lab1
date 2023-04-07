@@ -1,7 +1,7 @@
-public class Problem2 {
+public class FindAverage {
     private int m;
     private int[] N;
-    public Problem2(int m,int[] n) {
+    public FindAverage(int m,int[] n) {
         this.m = m;
         N = n;
     }
@@ -22,7 +22,7 @@ public class Problem2 {
         return m;
     }
 
-    public void Problem_2(){
+    public void FindAVG(){
         double a = 0;
         for (int i = 0; i<m; i++){
             a+=N[i];
